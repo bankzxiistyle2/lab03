@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +11,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Simple Sidebar - Start Bootstrap Template</title>
+    <title>How to use Bootstrap</title>
+     <style>
+     footer {
+     position: fixed;
+     left: 0px;
+     bottom: 0px;
+     height: 30px;
+     width: 100%;
+     background: black;
+     color: darkorange;
+     text-align: center;
+     font-family: 'Kanit', sans-serif;
+     size: 30px;
+    }
+    </style>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,15 +50,15 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#">
-                        การใช้งาน Bootstrap
+                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/home.html">
+                        เริ่มต้นการใช้งาน Bootstrap
                     </a>
                 </li>
                 <li>
-                    <a href="#">การใช้งาน Grid ใน Bootstrap</a>
+                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/lab03.html">การใช้ Grid ใน Bootstrap</a>
                 </li>
                 <li>
-                    <a href="#">การใช้งาน Form</a>
+                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/form.html">การใช้ Form</a>
                 </li>
             </ul>
         </div>
@@ -53,42 +69,108 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>ระบบ Grid ใน Bootstrap</h1>
-                        <h2>การทำงานของระบบ Gird ใน Bootstrap นั้นแสดงได้จากตารางต่อไปนี้
-                            <p>
-                                <div class="container">
-                                    <h2>Bordered Table</h2>
-                                    <p>The .table-bordered class adds borders to a table:</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th>Firstname</th>
-                                                <th>Lastname</th>
-                                                <th>Email</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>John</td>
-                                                <td>Doe</td>
-                                                <td>john@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mary</td>
-                                                <td>Moe</td>
-                                                <td>mary@example.com</td>
-                                            </tr>
-                                            <tr>
-                                                <td>July</td>
-                                                <td>Dooley</td>
-                                                <td>july@example.com</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </p>
-                            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                        <br>
+                        <br>
+                        <img src="http://www.siamhtml.com/wp-content/uploads/2013/07/bootstrap.png" width="100%" height="300">
+                        <h3>การใช้งาน Grid ใน Bootstrap</font></h3>
+                        <p><table class="table table-bordered">
+    <thead>
+      <tr>
+        <th></th>
+        <th>ขนาดเล็กพิเศษ(โทรศัพท์:xs)<br>(<768px)</th>
+        <th>ขนาดเล็ก(แทปเบล็ต:sm)<br>(>=768px)</th>
+        <th>ขนาดกลาง(เดสทอป:md)<br>(>=992px)</th>
+        <th>ขนาดใหญ่(เดสทอป:lg)<br>(>=1200px)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ลักษณะของ Grid</td>
+        <td>แสดงในแนวนอนทุกครั้ง</td>
+        <td colspan="3">ย่อและแสดงผลตามขนาดที่กำหนด</td>
+      </tr>
+      <tr>
+        <td>ความกว้างของ<br>Container</td>
+        <td>ไม่มี(อัตโนมัติ)</td>
+        <td>750px</td>
+        <td>970px</td>
+        <td>1170px</td>
+      </tr>
+      <tr>
+        <td>คำนำหน้า</td>
+        <td>.col-xs-</td>
+        <td>.col-sm-</td>
+        <td>.col-md-</td>
+        <td>.col-lg-</td>
+      </tr>
+      <tr>
+        <td>จำนวนคอลัมน์</td>
+        <td colspan="4">12</td>
+      </tr>
+      <tr>
+      	<td>ความกว้างของ<br>Column</td>
+        <td>อัตโนมัติ</td>
+        <td>~62px</td>
+        <td>~81px</td>
+        <td>~97px</td>
+      </tr>
+      <tr>
+        <td>Gutter.width</td>
+        <td colspan="4">30px (15px on each side of a column)</td>
+      </tr>
+      <tr>
+        <td>Nestable</td>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <td>Offsets</td>
+        <td colspan="4">Yes</td>
+      </tr>
+      <tr>
+        <td>Column ordering</td>
+        <td colspan="4">Yes</td>
+      </tr>
+    </tbody>
+  </table>
+</div></p>
+<h3>ตัวอย่าง: การกำหนด Grid</h3>
+
+<p>ตัวอย่างนี้ใช้ .col-md-* ซึ่งเป็นการแสดงผลในหน้าจอแบบเดสทอป โดยสามารถเปลี่ยนเป็นต่างๆ ได้ตามต้องการตามตารางด้านบน ซึ่งจะอยู่ภายใต้ .row</p>
+<p><pre>
+<code class="language-html">&lt;div class="row"&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+  &lt;div class="col-md-1"&gt;.col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-8"&gt;.col-md-8&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+  &lt;div class="col-md-4"&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+  &lt;div class="col-md-6"&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</p>
+
+
+
+                        <br>
+                        <br>
                     </div>
                 </div>
             </div>
@@ -106,7 +188,16 @@
 
     <!-- Menu Toggle Script -->
     <script>
-            $("#menu-toggle").click(func tion(e                e.preventDefault                $("#wrapper").toggleClass("toggled                </script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <footer>
+            <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+            <font size="+1"> รายวิชา 887371 Web Programming | 2016 by นายภควัต ม่วงมิตร 58660033 | คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา </font>
+        </footer>
 
 </body>
 
