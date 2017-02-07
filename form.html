@@ -1,277 +1,244 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
-
+    <title>Bootstrap</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>How to use Bootstrap</title>
-     <style>
-     footer {
-     position: fixed;
-     left: 0px;
-     bottom: 0px;
-     height: 30px;
-     width: 100%;
-     background: black;
-     color: darkorange;
-     text-align: center;
-     font-family: 'Kanit', sans-serif;
-     size: 30px;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+        
+        .row.content {
+            height: auto
+        }
+        /* Set gray background color and 100% height */
+        
+        .sidenav {
+            background-color: white;
+            height: 100%;
+        }
+        /* Set black background color, white text and some padding */
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+        }
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 5px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }
     </style>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
 
-    <div id="wrapper">
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4>58660033 Blog</h4>
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/lab03.html">Home</a></li>
+                    <li><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/Grid.html">Grid on Bootstrap</a></li>
+                    <li><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/form.html">How to use Form</a></li>
+                </ul><br>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Blog..">
+                    <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    </span>
+                </div>
+            </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/home.html">
-                        เริ่มต้นการใช้งาน Bootstrap
-                    </a>
-                </li>
-                <li>
-                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/lab03.html">การใช้ Grid ใน Bootstrap</a>
-                </li>
-                <li>
-                    <a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/form.html">การใช้ Form</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+            <div class="col-sm-9">
+                <h4><small>RECENT POSTS</small></h4>
+                <hr>
+                <h2>How to use Form on HTML</h2>
+                <h5><span class="glyphicon glyphicon-time"></span> Post by Pakawat Muangmit, Feb 2, 2017.</h5>
+                <p><img src="http://www.siamhtml.com/wp-content/uploads/2013/07/bootstrap.png" width="100%"></p>
+                <br>
+                <p>
+                    <h3>การสร้าง Form</font>
+                    </h3>
+                    <div class='content-show'>
+                        <h1>การสร้าง Form ในภาษา HTML</h1>
+                        <b>HTML Form</b> ถูกใช้เมื่อต้องการเก็บข้อมูลอะไรบางอย่าง จากผู้เข้าชมเว็บไซต์ เช่น ข้อมูลประจำตัว
+                        ข้อมลการเยี่ยมชมต่าง ๆ และอื่น ๆ อีกมาก<br /><br /> การทำงานของ <b>HTML Form</b> จะเริ่มต้นโดย การรับ
+                        input จากผู้เข้าชมเว็บไซต์ แล้วจะส่งข้อมูลเหล่านั้น ไปที่เซิฟเวอร์ แล้วทำการประมวลผลต่อไป ส่วนการประมาลผลจะเป็นแบบใดนั้น
+                        ก็อยู่ที่เรากำหนดมัน<br /><br /> องค์ประกอบของ <b>Form ใน HTML</b> นั้น อาจจะประกอบไปด้วย ช่องกรอบช้อความ
+                        ปุ่มต่าง ๆ ตัวเลือกต่าง ๆ เพื่อใช้ในการรับข้อมูลจากผู้ใช้ ก่อนที่เราจะศึกษาเรื่ององค์ประกอบของฟอร์มนั้น
+                        เรามาดู Syntax ของ Form กันก่อนดีกว่าครับ form ใน HTML นั้น จะขึ้นต้นแท็กด้วย &lt;form> และจะปิดท้ายด้วยแท็ก
+                        &lt;/form> ซึ่งก็มีรูปแบบตามด้านล่างครับ<br />
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
-                        <br>
-                        <br>
-                        <img src="http://www.siamhtml.com/wp-content/uploads/2013/07/bootstrap.png" width="100%" height="300">
-                        <h3>การสร้าง Form</font></h3>
-                        <div class='content-show'><h1>การสร้าง Form ในภาษา HTML</h1>
-<b>HTML Form</b> ถูกใช้เมื่อต้องการเก็บข้อมูลอะไรบางอย่าง จากผู้เข้าชมเว็บไซต์ เช่น ข้อมูลประจำตัว ข้อมลการเยี่ยมชมต่าง ๆ และอื่น ๆ อีกมาก<br /><br />
-
-การทำงานของ <b>HTML Form</b> จะเริ่มต้นโดย การรับ input จากผู้เข้าชมเว็บไซต์ แล้วจะส่งข้อมูลเหล่านั้น ไปที่เซิฟเวอร์ แล้วทำการประมวลผลต่อไป ส่วนการประมาลผลจะเป็นแบบใดนั้น ก็อยู่ที่เรากำหนดมัน<br /><br />
-
-องค์ประกอบของ <b>Form ใน HTML</b> นั้น อาจจะประกอบไปด้วย ช่องกรอบช้อความ ปุ่มต่าง ๆ ตัวเลือกต่าง ๆ เพื่อใช้ในการรับข้อมูลจากผู้ใช้ ก่อนที่เราจะศึกษาเรื่ององค์ประกอบของฟอร์มนั้น เรามาดู Syntax ของ Form กันก่อนดีกว่าครับ form ใน HTML นั้น จะขึ้นต้นแท็กด้วย &lt;form> และจะปิดท้ายด้วยแท็ก &lt;/form> ซึ่งก็มีรูปแบบตามด้านล่างครับ<br />
-
-<pre name="code" class="html">
+                        <pre name="code" class="html">
 <form action="url" method="post|get">
     form elements
 </form>
 </pre>
-<b>action</b> คือหน้าที่เราต้องการส่งข้อมูลไปเพื่อจัดการกับข้อมูล<br />
-<b>method</b> คือรูปแบบของการส่งข้อมูล มีแบบ get กับ post<br />
-<b>form elements</b> คือองค์ประกอบของ form ต่าง ๆ เช่น textarea, text, checkbox และอื่น ๆ<br />
+                        <b>action</b> คือหน้าที่เราต้องการส่งข้อมูลไปเพื่อจัดการกับข้อมูล<br />
+                        <b>method</b> คือรูปแบบของการส่งข้อมูล มีแบบ get กับ post<br />
+                        <b>form elements</b> คือองค์ประกอบของ form ต่าง ๆ เช่น textarea, text, checkbox และอื่น ๆ<br />
 
-<h2>ตัวอย่างการใช้งาน form ในภาษา HTML</h2>
-<pre name="code" class="html">
+                        <h2>ตัวอย่างการใช้งาน form ในภาษา HTML</h2>
+                        <pre name="code" class="html">
 <form>
 ชื่อ : <input type="text" name="name" />
 นามสกุล : <input type="text" name="lastname" />
 </form>
-</pre>
-ผลลัพธ์ที่ได้ <br />
-<form>
-ชื่อ : <input type="text" name="name" />
-นามสกุล : <input type="text" name="lastname" />
-</form>
+</pre> ผลลัพธ์ที่ได้ <br />
+                        <form>
+                            ชื่อ : <input type="text" name="name" /> นามสกุล : <input type="text" name="lastname" />
+                        </form>
 
-<h2>Input type="text"</h2>
-เป็นช่องให้กรอกข้อความ ดูตัวอย่างโค้ด
-<pre name="code" class="html">
+                        <h2>Input type="text"</h2>
+                        เป็นช่องให้กรอกข้อความ ดูตัวอย่างโค้ด
+                        <pre name="code" class="html">
 <input type="text" />
-</pre>
-ผลลัพธ์ที่ได้
-<input type="text" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="text" />
 
-<h2>Input type="password"</h2>
-เป็นช่องให้กรอกข้อความ ข้อความที่กรอก จะเป็นจุด ๆ ทำให้อ่านไม่ออก ดูตัวอย่างโค้ด
-<pre name="code" class="html">
+                        <h2>Input type="password"</h2>
+                        เป็นช่องให้กรอกข้อความ ข้อความที่กรอก จะเป็นจุด ๆ ทำให้อ่านไม่ออก ดูตัวอย่างโค้ด
+                        <pre name="code" class="html">
 <input type="password" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="password" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="password" />
 
-<h2>Input type="radio"</h2>
-เป็นช่องวงกลมให้ติ๊ก สามารถจัดเป็นกลุ่ม เลือกได้อันหนึ่งอันใดในกลุ่ม
-<pre name="code" class="html">
+                        <h2>Input type="radio"</h2>
+                        เป็นช่องวงกลมให้ติ๊ก สามารถจัดเป็นกลุ่ม เลือกได้อันหนึ่งอันใดในกลุ่ม
+                        <pre name="code" class="html">
 <input type="radio" name="group" value="d1" />
 <input type="radio" name="group" value="d2" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="radio" name="group" value="d1" />
-<input type="radio" name="group" value="d2" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="radio" name="group" value="d1" />
+                        <input type="radio" name="group" value="d2" />
 
-<h2>Input type="checkbox"</h2>
-เป็นช่องสี่เหลี่ยมให้ติ๊ก เลือกกี่อันก็ได้
-<pre name="code" class="html">
+                        <h2>Input type="checkbox"</h2>
+                        เป็นช่องสี่เหลี่ยมให้ติ๊ก เลือกกี่อันก็ได้
+                        <pre name="code" class="html">
 <input type="checkbox" name="box1" value="d1" />
 <input type="checkbox" name="box2" value="d2" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="checkbox" name="box1" value="d1" />
-<input type="checkbox" name="box2" value="d2" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="checkbox" name="box1" value="d1" />
+                        <input type="checkbox" name="box2" value="d2" />
 
-<h2>Input type="reset"</h2>
-เป็นปุ่มสำหรับให้ลบ reset ค่าเป็นค่าเริ่มต้นทั้งหมด ที่อยู่ในฟอร์ม
-<pre name="code" class="html">
+                        <h2>Input type="reset"</h2>
+                        เป็นปุ่มสำหรับให้ลบ reset ค่าเป็นค่าเริ่มต้นทั้งหมด ที่อยู่ในฟอร์ม
+                        <pre name="code" class="html">
 <form>
 <input type="text" name="username" />
 <input type="password" name="password" />
 <input type="reset" value="กดปุ่ม เพื่อรีเซตค่าทั้งหมด" />
 </form>
-</pre>
-ผลลัพธ์ที่ได้ 
-<form>
-<input type="text" name="username" />
-<input type="password" name="password" />
-<input type="reset" value="กดปุ่ม เพื่อรีเซตค่าทั้งหมด" />
-</form>
-<script type="text/javascript">
-$j("input[name=username]").val("username");
+</pre> ผลลัพธ์ที่ได้
+                        <form>
+                            <input type="text" name="username" />
+                            <input type="password" name="password" />
+                            <input type="reset" value="กดปุ่ม เพื่อรีเซตค่าทั้งหมด" />
+                        </form>
+                        <script type="text/javascript">
+                                                        $j("input[name=username]").val("username");
 $j("input[name=password]").val("username");
-</script>
 
-<h2>Input type="button"</h2>
-เป็นปุ่มธรรมดา ส่วนมาก จะใส่โค้ด javascript เพื่อให้ปุ่มทำงานตาม event ต่าง ๆ 
-<pre name="code" class="html">
+                        </script>
+
+                        <h2>Input type="button"</h2>
+                        เป็นปุ่มธรรมดา ส่วนมาก จะใส่โค้ด javascript เพื่อให้ปุ่มทำงานตาม event ต่าง ๆ
+                        <pre name="code" class="html">
 <input type="button" name="btn" value="ปุ่มกด" onclick="alert("www.doesystem.com")" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="button" name="btn" value="ปุ่มกด" onclick="alert("www.doesystem.com")" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="button" name="btn" value="ปุ่มกด" onclick="alert(" www.doesystem.com ")" />
 
-<h2>Input type="submit"</h2>
-เป็นปุ่มซึ่งเมื่อกดแล้ว หมายถึงการยืนยันข้อมูล แล้วส่งข้อมูลไปทำการตรวจสอบทันที
-<pre name="code" class="html">
+                        <h2>Input type="submit"</h2>
+                        เป็นปุ่มซึ่งเมื่อกดแล้ว หมายถึงการยืนยันข้อมูล แล้วส่งข้อมูลไปทำการตรวจสอบทันที
+                        <pre name="code" class="html">
 <input type="submit" name="btn" value="ตกลง" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="submit" name="btn" value="ตกลง" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="submit" name="btn" value="ตกลง" />
 
-<h2>Input type="image"</h2>
-มีการทำงานเหมือน submit แต่เปลี่ยนจากปุ่ม เป็นรูปภาพแทน
-<pre name="code" class="html">
+                        <h2>Input type="image"</h2>
+                        มีการทำงานเหมือน submit แต่เปลี่ยนจากปุ่ม เป็นรูปภาพแทน
+                        <pre name="code" class="html">
 <input type="image" src="http://www.iconarchive.com/download/i32216/tpdkdesign.net/refresh-cl/Symbols-Tips.ico" width="30" height="30" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="image" src="http://www.iconarchive.com/download/i32216/tpdkdesign.net/refresh-cl/Symbols-Tips.ico" width="30" height="30" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="image" src="http://www.iconarchive.com/download/i32216/tpdkdesign.net/refresh-cl/Symbols-Tips.ico" width="30"
+                            height="30" />
 
-<h2>Input type="file"</h2>
-ลักษณะจะแตกต่างกันตามบาวเซอร์ ใช้เพื่อเป็นการ import file จากในเครื่อง ซึ่งในการใช้ type=file จะต้องใส่ enctype="multipart/form-data" ไว้ที่แท็ก form ด้วย
-<pre name="code" class="html">
+                        <h2>Input type="file"</h2>
+                        ลักษณะจะแตกต่างกันตามบาวเซอร์ ใช้เพื่อเป็นการ import file จากในเครื่อง ซึ่งในการใช้ type=file จะต้องใส่ enctype="multipart/form-data"
+                        ไว้ที่แท็ก form ด้วย
+                        <pre name="code" class="html">
 <form enctype="multipart/form-data">
 <input type="file" name="file" />
 </form>
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="file" name="file" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="file" name="file" />
 
-<h2>Input type="hidden"</h2>
-เป็นข้อมูล ที่ถูกซ่อนไว้ จะไม่สามารถมองเห็น ส่วนมากใช้ส่งข้อมูล ที่ไม่ต้องการให้ผู้เยี่ยมชมเว็บไซต์เห็นข้อมูลดังกล่าว
-<pre name="code" class="html">
+                        <h2>Input type="hidden"</h2>
+                        เป็นข้อมูล ที่ถูกซ่อนไว้ จะไม่สามารถมองเห็น ส่วนมากใช้ส่งข้อมูล ที่ไม่ต้องการให้ผู้เยี่ยมชมเว็บไซต์เห็นข้อมูลดังกล่าว
+                        <pre name="code" class="html">
 <input type="hidden" name="hid" value="datahidden" />
-</pre>
-ผลลัพธ์ที่ได้ 
-<input type="hidden" name="hid" value="datahidden" />
+</pre> ผลลัพธ์ที่ได้
+                        <input type="hidden" name="hid" value="datahidden" />
 
-<h2>Select Option ใน HTML</h2>
-เป็นช่องสี่เหลี่ยมมีข้อมูลอยู่ข้างในเพื่อให้เลือก จำนวนของการแสดงผล เท่ากับจำนวนของแท็ก option
-<pre name="code" class="html">
+                        <h2>Select Option ใน HTML</h2>
+                        เป็นช่องสี่เหลี่ยมมีข้อมูลอยู่ข้างในเพื่อให้เลือก จำนวนของการแสดงผล เท่ากับจำนวนของแท็ก option
+                        <pre name="code" class="html">
 <select name="sel">
 	<option vale="1">Ex1</option>
 	<option vale="2">Ex2</option>
 	<option vale="3">Ex2</option>
 </select>
-</pre>
-ผลลัพธ์ที่ได้ 
-<select name="sel">
+</pre> ผลลัพธ์ที่ได้
+                        <select name="sel">
 	<option vale="1">Ex1</option>
 	<option vale="2">Ex2</option>
 	<option vale="3">Ex2</option>
 </select>
 
-<h2>Textarea ใน HTML</h2>
-มีลักษณะเป็นพื้นที่ให้ใส่ข้อมูล มีหลายแถว หลายคอลัมน์
-<pre name="code" class="html">
+                        <h2>Textarea ใน HTML</h2>
+                        มีลักษณะเป็นพื้นที่ให้ใส่ข้อมูล มีหลายแถว หลายคอลัมน์
+                        <pre name="code" class="html">
 <textarea></textarea>
-</pre>
-ผลลัพธ์ที่ได้ 
-<textarea></textarea>
-<br /><br />
+</pre> ผลลัพธ์ที่ได้
+                        <textarea></textarea>
+                        <br /><br />
 
-<h1>ตัวอย่าง การส่งคำค้นหาไปค้นหาใน google</h1>
-<pre name="code" class="html">
+                        <h1>ตัวอย่าง การส่งคำค้นหาไปค้นหาใน google</h1>
+                        <pre name="code" class="html">
 <form action="http://www.google.com/search" mathod="get" target="_blank">
 ค้นหาคำใน google <input type="text" name="q" /> <input type="submit" value="ค้นหาใน google" />
 </form>
 </pre>
-<form action="http://www.google.com/search" mathod="get" target="_blank">
-ค้นหาคำใน google <input type="text" name="q" /> <input type="submit" value="ค้นหาใน google" />
-</form></div><!-- website-doesystem --><ins class="adsbygoogle"
-				
-                        
-                        
-
-
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
+                        <form action="http://www.google.com/search" mathod="get" target="_blank">
+                            ค้นหาคำใน google <input type="text" name="q" /> <input type="submit" value="ค้นหาใน google" />
+                        </form>
                     </div>
-                </div>
+                    <!-- website-doesystem -->
+                    <ins class="adsbygoogle" </p>
+
+                        <hr>
             </div>
         </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
-    <footer>
-            <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
-            <font size="+1"> รายวิชา 887371 Web Programming | 2016 by นายภควัต ม่วงมิตร 58660033 | คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา </font>
-        </footer>
+    <footer class="container-fluid">
+        <p>
+            <center>รายวิชา 887371 Web Programming | 2016 by นายภควัต ม่วงมิตร 58660033 | คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา</center>
+        </p>
+    </footer>
 
 </body>
 
