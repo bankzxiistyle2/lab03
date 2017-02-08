@@ -5,7 +5,7 @@
     <title>Bootstrap</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://angsila.cs.buu.ac.th/~58660033/887371/lab03/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
@@ -49,7 +49,7 @@
                 <h4>58660033 Blog</h4>
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active"><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/lab03.html">Home</a></li>
-                    <li><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/Grid.html">Grid on Bootstrap</a></li>
+                    <li><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/grid.html">Grid on Bootstrap</a></li>
                     <li><a href="http://angsila.informatics.buu.ac.th/~58660033/887371/lab03/form.html">How to use Form</a></li>
                 </ul><br>
                 <div class="input-group">
@@ -77,9 +77,10 @@
                         <b>HTML Form</b> ถูกใช้เมื่อต้องการเก็บข้อมูลอะไรบางอย่าง จากผู้เข้าชมเว็บไซต์ เช่น ข้อมูลประจำตัว
                         ข้อมลการเยี่ยมชมต่าง ๆ และอื่น ๆ อีกมาก<br /><br /> การทำงานของ <b>HTML Form</b> จะเริ่มต้นโดย การรับ
                         input จากผู้เข้าชมเว็บไซต์ แล้วจะส่งข้อมูลเหล่านั้น ไปที่เซิฟเวอร์ แล้วทำการประมวลผลต่อไป ส่วนการประมาลผลจะเป็นแบบใดนั้น
-                        ก็อยู่ที่เรากำหนดมัน<br /><br /> องค์ประกอบของ <b>Form ใน HTML</b> นั้น อาจจะประกอบไปด้วย ช่องกรอบช้อความ
-                        ปุ่มต่าง ๆ ตัวเลือกต่าง ๆ เพื่อใช้ในการรับข้อมูลจากผู้ใช้ ก่อนที่เราจะศึกษาเรื่ององค์ประกอบของฟอร์มนั้น
-                        เรามาดู Syntax ของ Form กันก่อนดีกว่าครับ form ใน HTML นั้น จะขึ้นต้นแท็กด้วย &lt;form> และจะปิดท้ายด้วยแท็ก
+                        ก็อยู่ที่เรากำหนดมัน
+                        <br /><br /> องค์ประกอบของ <b>Form ใน HTML</b> นั้น อาจจะประกอบไปด้วย ช่องกรอบช้อความ ปุ่มต่าง ๆ
+                        ตัวเลือกต่าง ๆ เพื่อใช้ในการรับข้อมูลจากผู้ใช้ ก่อนที่เราจะศึกษาเรื่ององค์ประกอบของฟอร์มนั้น เรามาดู
+                        Syntax ของ Form กันก่อนดีกว่าครับ form ใน HTML นั้น จะขึ้นต้นแท็กด้วย &lt;form> และจะปิดท้ายด้วยแท็ก
                         &lt;/form> ซึ่งก็มีรูปแบบตามด้านล่างครับ<br />
 
                         <pre name="code" class="html">
@@ -148,10 +149,8 @@
                             <input type="password" name="password" />
                             <input type="reset" value="กดปุ่ม เพื่อรีเซตค่าทั้งหมด" />
                         </form>
-                        <script type="text/javascript">
-                                                        $j("input[name=username]").val("username");
-$j("input[name=password]").val("username");
-
+                        <script type="text/javascript">                            .val("username");
+$j("input[name=password]")                            .val("username");
                         </script>
 
                         <h2>Input type="button"</h2>
@@ -234,7 +233,15 @@ $j("input[name=password]").val("username");
         </div>
     </div>
 
-    <footer class="container-fluid">
+    <p><h4>Leave a Comment:</h4>
+    <form role="form">
+        <div class="form-group">
+            <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <footer class="container-fluid"></p>
         <p>
             <center>รายวิชา 887371 Web Programming | 2016 by นายภควัต ม่วงมิตร 58660033 | คณะวิทยาการสารสนเทศ มหาวิทยาลัยบูรพา</center>
         </p>
